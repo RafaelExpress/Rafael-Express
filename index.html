@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rafael Express - Entregas Rápidas</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+    header { background: #1e1e1e; color: #fff; padding: 20px; text-align: center; }
+    nav a { color: #fff; margin: 0 15px; text-decoration: none; font-weight: bold; }
+    section { padding: 40px 20px; }
+    .hero { background: #f4f4f4; text-align: center; }
+    .hero h1 { color: #333; }
+    .button { background: #333; color: #fff; padding: 10px 20px; border: none; cursor: pointer; margin-top: 20px; }
+    .form-group { margin-bottom: 15px; }
+    .form-group label { display: block; margin-bottom: 5px; }
+    .form-group input, .form-group textarea { width: 100%; padding: 10px; }
+    footer { background: #1e1e1e; color: #fff; text-align: center; padding: 20px; }
+    .container { max-width: 800px; margin: auto; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Rafael Express</h1>
+    <nav>
+      <a href="#sobre">Sobre</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#orcamento">Orçamento</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Entregas rápidas de em até um dia</h1>
+      <p>Confiável, sempre por perto, ágil e educado.</p>
+      <button class="button" onclick="document.getElementById('orcamento').scrollIntoView({behavior: 'smooth'})">Peça um Orçamento</button>
+    </div>
+  </section>
+
+  <section id="sobre">
+    <div class="container">
+      <h2>Sobre a Rafael Express</h2>
+      <p>Somos uma empresa de entregas rápidas localizada no Rio de Janeiro. Atuamos com agilidade, educação e total confiabilidade. Atendemos com foco em serviço personalizado e eficiente.</p>
+    </div>
+  </section>
+
+  <section id="servicos">
+    <div class="container">
+      <h2>Serviços</h2>
+      <ul>
+        <li>Entrega expressa de documentos</li>
+        <li>Coleta e entrega de encomendas locais</li>
+        <li>Serviços personalizados para empresas</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="orcamento">
+    <div class="container">
+      <h2>Solicitar Orçamento</h2>
+      <form>
+        <div class="form-group">
+          <label>Nome:</label>
+          <input type="text" name="nome" required />
+        </div>
+        <div class="form-group">
+          <label>Telefone / WhatsApp:</label>
+          <input type="tel" name="telefone" required />
+        </div>
+        <div class="form-group">
+          <label>Endereço de Coleta:</label>
+          <input type="text" name="coleta" required />
+        </div>
+        <div class="form-group">
+          <label>Endereço de Entrega:</label>
+          <input type="text" name="entrega" required />
+        </div>
+        <div class="form-group">
+          <label>Tipo de Entrega:</label>
+          <input type="text" name="tipo" required />
+        </div>
+        <button class="button" type="submit">Solicitar</button>
+      </form>
+    </div>
+  </section>
+
+  <section id="contato">
+    <div class="container">
+      <h2>Contato</h2>
+      <p><strong>Telefone:</strong> (21) 98114-7624</p>
+      <p><strong>Email:</strong> onix.contatorj@gmail.com</p>
+      <p><strong>Endereço:</strong> Rua Gregório de Matos, 275</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>Rafael Express - CNPJ: 48.253.574/0001-06</p>
+  </footer>
+</body>
+</html>
